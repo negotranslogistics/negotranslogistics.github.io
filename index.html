@@ -2,66 +2,90 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Negotrans Logistics - Des solutions de transport sur mesure : routier, maritime, aérien et ferroviaire.">
-    <meta name="keywords" content="logistique, transport, transit, maritime, routier, aérien, ferroviaire, Negotrans, Zair Hebibeche">
-    <meta name="author" content="Negotrans Logistics">
-    <title>Negotrans Logistics</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background-color: #0a1f44; color: white; padding: 20px; text-align: center; }
-        nav { background-color: #162c5b; padding: 10px; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; }
-        section { padding: 20px; max-width: 1000px; margin: auto; }
-        footer { background-color: #0a1f44; color: white; text-align: center; padding: 10px; margin-top: 30px; }
-        img.logo { max-width: 200px; height: auto; margin-top: 10px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Negotrans Logistics - Transport international, logistique, fret maritime, routier et aérien.">
+  <title>Negotrans Logistics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Roboto', sans-serif; line-height: 1.6; background: #f4f4f4; color: #333; }
+    header {
+      background: url('https://images.unsplash.com/photo-1552632764-411cf82e4e30?auto=format&fit=crop&w=1470&q=80') center center/cover no-repeat;
+      color: white; padding: 100px 20px; text-align: center;
+    }
+    header h1 { font-size: 3em; margin-bottom: 10px; }
+    header p { font-size: 1.2em; }
+    nav { background: #0056b3; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    h2 { color: #0056b3; margin-bottom: 20px; }
+    .services img, .about img { max-width: 100%; border-radius: 12px; margin-bottom: 10px; }
+    form input, form textarea {
+      width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;
+    }
+    form button {
+      background: #0056b3; color: white; padding: 10px 20px; border: none;
+      border-radius: 5px; cursor: pointer;
+    }
+    .footer {
+      background: #333; color: #ccc; text-align: center; padding: 20px;
+    }
+    .contact-icons a {
+      display: inline-block; margin: 10px; color: white; font-weight: bold;
+      background: #25D366; padding: 10px 20px; border-radius: 30px; text-decoration: none;
+    }
+    .contact-icons a.call { background: #007bff; }
+    .logo { max-height: 80px; margin-bottom: 20px; }
+  </style>
 </head>
 <body>
 
-<header>
-    <img src="logo.jpg" alt="Logo Negotrans Logistics" class="logo">
+  <header>
+    <img src="logo.jpg" alt="Logo Negotrans" class="logo">
     <h1>Negotrans Logistics</h1>
-    <p>Des solutions de transport sur mesure</p>
-</header>
+    <p>Votre spécialiste en transport et logistique internationale</p>
+  </header>
 
-<nav>
-    <a href="#accueil">Accueil</a>
+  <nav>
+    <a href="#about">À propos</a>
     <a href="#services">Services</a>
-    <a href="#apropos">À propos</a>
     <a href="#contact">Contact</a>
-</nav>
+  </nav>
 
-<section id="accueil">
-    <h2>Bienvenue chez Negotrans Logistics</h2>
-    <p>Nous proposons des services de transport et logistique personnalisés par voie terrestre, maritime, aérienne et ferroviaire.</p>
-</section>
+  <section id="about" class="about">
+    <h2>À propos de nous</h2>
+    <p>Dirigée par <strong>Zair Hebibeche</strong>, Negotrans Logistics assure une gestion fluide et efficace des opérations de transport et de logistique à travers le monde.</p>
+    <img src="https://images.unsplash.com/photo-1613889332315-c96f94c2d306?auto=format&fit=crop&w=1000&q=80" alt="About image">
+  </section>
 
-<section id="services">
+  <section id="services" class="services">
     <h2>Nos Services</h2>
-    <ul>
-        <li>Transport routier national et international</li>
-        <li>Transit maritime et conteneurisé</li>
-        <li>Fret aérien rapide et sécurisé</li>
-        <li>Solutions ferroviaires optimisées</li>
-    </ul>
-</section>
+    <p><strong>Transport Maritime :</strong> Solutions de conteneurisation, import/export, transit portuaire.</p>
+    <p><strong>Transport Routier :</strong> Livraison fiable nationale et internationale.</p>
+    <p><strong>Transport Aérien :</strong> Expédition urgente avec traçabilité complète.</p>
+    <p><strong>Logistique & Douanes :</strong> Gestion documentaire, dédouanement, stockage temporaire.</p>
+    <img src="https://images.unsplash.com/photo-1581287053822-513f978ebfd0?auto=format&fit=crop&w=1000&q=80" alt="Services image">
+  </section>
 
-<section id="apropos">
-    <h2>À propos</h2>
-    <p>Negotrans Logistics est dirigée par <strong>Zair Hebibeche</strong>. Nous plaçons la fiabilité, la ponctualité et l’adaptabilité au cœur de notre métier.</p>
-</section>
+  <section id="contact">
+    <h2>Contactez-nous</h2>
+    <form action="https://formsubmit.co/exploitations@negotranslogistics.fr" method="POST">
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+      <input type="hidden" name="_captcha" value="false">
+      <button type="submit">Envoyer</button>
+    </form>
+    <div class="contact-icons">
+      <a href="https://wa.me/33769027894" target="_blank">💬 WhatsApp</a>
+      <a class="call" href="tel:+33769027894">📞 Appeler</a>
+    </div>
+  </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>📞 Téléphone : <a href="tel:+33769027894">07 69 02 78 94</a></p>
-    <p>📧 Email : <a href="mailto:exploitations@negotranslogistics.fr">exploitations@negotranslogistics.fr</a></p>
-</section>
-
-<footer>
-    &copy; 2025 Negotrans Logistics. Tous droits réservés.
-</footer>
+  <div class="footer">
+    &copy; 2025 Negotrans Logistics | exploitations@negotranslogistics.fr
+  </div>
 
 </body>
 </html>
